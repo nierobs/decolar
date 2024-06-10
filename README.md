@@ -1,4 +1,4 @@
-# HTML & CSS Starter Template
+# Projeto Decolar
 
 **Author:** Robson Niemeyer  
-**Repository:** [https://github.com/nierobs/html-css-starter-template](https://github.com/nierobs/html-css-starter-template)  
+**Repository:** [https://github.com/nierobs/decolar](https://github.com/nierobs/decolar)  
