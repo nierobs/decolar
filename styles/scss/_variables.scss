@@ -1,0 +1,38 @@
+// HEADER
+
+$header__bg: hsl(240, 18.75%, 18.75%);
+$header__txt: #fff;
+$header__ln: #fff;
+$header__ln-hover: darken($header__ln, 6.25%);
+
+// BODY
+
+$bg1: #fff;
+$bg2: hsl(240, 18.75%, 93.75%);
+
+$txt: hsl(240, 18.75%, 12.5%);
+$ln: hsl(225, 81.25%, 56.25%);
+$ln-hover: darken($ln, 6.25%);
+$btn: hsl(240, 18.75%, 12.5%);
+$btn-hover: lighten($btn, 6.25%);
+
+$h1: 2rem;
+$h2: 1.4142rem;
+$h3: 1.1892rem;
+$small: 0.8409rem;
+
+$lh1: 1.6818;
+$lh2: 1.1892;
+
+$sh1: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.1875);
+$sh2: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.1875);
+
+$font1: sans-serif;
+$font2: "Red Hat Display", sans-serif;
+
+// FOOTER
+
+$footer__bg: hsl(240, 18.75%, 18.75%);
+$footer__txt: #fff;
+$footer__ln: #fff;
+$footer__ln-hover: darken($footer__ln, 6.25%);

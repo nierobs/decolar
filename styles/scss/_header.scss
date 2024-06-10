@@ -1,0 +1,42 @@
+@use "sass:math";
+@use "variables" as var;
+
+header {
+  background: url(../../images/sea.webp) center top / cover no-repeat var.$header__bg;
+  color: var.$header__txt;
+
+  .container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 4rem 1rem;
+  }
+
+  a,
+  a:any-link {
+    color: var.$header__ln;
+
+    &:hover {
+      color: var.$header__ln-hover;
+    }
+  }
+
+  .video {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+  }
+
+  #youtube {
+    border-radius: 0.5rem;
+    box-shadow: var.$sh1;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

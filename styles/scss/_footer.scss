@@ -1,0 +1,80 @@
+@use "sass:math";
+@use "variables" as var;
+
+footer {
+  background-color: var.$footer__bg;
+  color: var.$footer__txt;
+  font-size: var.$small;
+  padding: 1rem 0;
+  text-align: center;
+
+  .wrapper {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .item {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+
+    li.header {
+      font-family: var.$font2;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.0625rem;
+    }
+  }
+
+  a,
+  a:any-link {
+    color: var.$footer__ln;
+
+    &:hover {
+      color: var.$footer__ln-hover;
+    }
+  }
+
+  .social-icons {
+    a {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    svg {
+      height: 1rem;
+      width: auto;
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid var.$txt;
+    font-size: var.$small;
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+
+@mixin medium {
+  footer {
+    text-align: initial;
+
+    .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    ul {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
