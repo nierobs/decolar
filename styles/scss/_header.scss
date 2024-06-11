@@ -5,6 +5,10 @@ header {
   background: url(../../images/sea.webp) center top / cover no-repeat var.$header__bg;
   color: var.$header__txt;
 
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.375)
+  }
+
   .container {
     align-items: stretch;
     display: flex;
