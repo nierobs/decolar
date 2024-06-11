@@ -135,6 +135,7 @@ a.button {
   box-shadow: var.$sh1;
   color: #fff;
   display: inline-flex;
+  font-size: var.$small;
   font-family: var.$font2;
   font-weight: 700;
   justify-content: center;
@@ -146,7 +147,7 @@ a.button {
   transition: background-color 250ms ease-out;
 
   svg {
-    height: var.$h3;
+    height: var.$small;
     margin-right: 0.5rem;
     width: auto;
   }
