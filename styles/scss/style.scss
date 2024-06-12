@@ -158,10 +158,15 @@ a.button {
   }
 }
 
-#google-maps {
-  display: block;
-  height: 16rem;
-  width: 100%;
+section#map {
+  background-color: #e5e3df;
+  padding: 0;
+
+  iframe {
+    display: block;
+    height: 16rem;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
