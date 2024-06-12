@@ -1,8 +1,9 @@
 @use "sass:math";
 @use "variables" as var;
 
-header {
+#hero {
   background: url(../../images/sea.webp) center top / cover no-repeat;
+  padding: 0;
 
   .overlay {
     background-color: rgba(0, 0, 0, 0.375)

@@ -1,7 +1,7 @@
 @use "sass:math";
 @use "sass:string";
 @use "variables" as var;
-@use "header";
+@use "hero";
 @use "footer";
 
 @font-face {
@@ -119,7 +119,7 @@ strong {
 main section {
   padding: 4rem 0;
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background-color: var.$bg2
   }
 }
