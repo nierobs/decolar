@@ -119,10 +119,6 @@ strong {
 main section {
   padding: 4rem 0;
   
-  &#hero {
-    background-color: var.$bg-hero;
-  }
-
   &:nth-child(even) {
     background-color: var.$bg2
   }

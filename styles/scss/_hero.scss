@@ -2,7 +2,7 @@
 @use "variables" as var;
 
 #hero {
-  background: url(../../images/sea.webp) center top / cover no-repeat;
+  background: url(../../images/sea.webp) center top / cover no-repeat var.$hero__bg;
   padding: 0;
 
   .overlay {
