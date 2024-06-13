@@ -22,15 +22,15 @@
     text-transform: uppercase;
     transition: background-color var.$trs;
 
+    &:hover {
+      background-color: var.$btn-hover;
+      color: #fff;
+    }
+
     svg {
       height: var.$small;
       margin-right: 0.5rem;
       width: auto;
-    }
-
-    &:hover {
-      background-color: var.$btn-hover;
-      color: #fff;
     }
   }
 }

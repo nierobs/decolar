@@ -41,16 +41,16 @@ footer {
     &:hover {
       color: var.$footer__ln-hover;
     }
-  }
 
-  a.icon {
-    align-items: center;
-    display: flex;
-    gap: 0.5rem;
+    &.icon {
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
 
-    svg {
-      height: var.$small;
-      width: auto;
+      svg {
+        height: var.$small;
+        width: auto;
+      }
     }
   }
 
