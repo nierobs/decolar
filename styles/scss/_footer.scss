@@ -43,15 +43,13 @@ footer {
     }
   }
 
-  .social-icons {
-    a {
-      align-items: center;
-      display: flex;
-      gap: 0.5rem;
-    }
+  a.icon {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
 
     svg {
-      height: 1rem;
+      height: var.$small;
       width: auto;
     }
   }
