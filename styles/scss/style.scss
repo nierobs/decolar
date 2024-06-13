@@ -2,6 +2,8 @@
 @use "sass:string";
 @use "variables" as var;
 @use "hero";
+@use "cta";
+@use "map";
 @use "footer";
 
 @font-face {
@@ -52,7 +54,8 @@ body {
   }
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-family: var.$font2;
   font-size: var.$h1;
   font-weight: 700;
@@ -61,7 +64,8 @@ h1, .h1 {
   margin: 1rem 0;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-family: var.$font2;
   font-size: var.$h2;
   font-weight: 700;
@@ -69,7 +73,8 @@ h2, .h2 {
   margin: 1rem 0;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-family: var.$font2;
   font-size: var.$h3;
   letter-spacing: 0.0625rem;
@@ -95,7 +100,7 @@ a,
 a:any-link {
   color: var.$ln;
   text-decoration: none;
-  transition: color 250ms ease-out;
+  transition: color var.$trs;
   user-select: all;
   overflow-wrap: break-word;
 
@@ -121,51 +126,6 @@ main section {
   
   &:nth-child(even) {
     background-color: var.$bg2
-  }
-}
-
-#cta {
-  text-align: center;
-}
-
-a.button {
-  align-items: center;
-  background-color: var.$btn;
-  border-radius: 0.5rem;
-  box-shadow: var.$sh1;
-  color: #fff;
-  display: inline-flex;
-  font-size: var.$small;
-  font-family: var.$font2;
-  font-weight: 700;
-  justify-content: center;
-  letter-spacing: 0.0625rem;
-  margin: 1rem 0;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background-color 250ms ease-out;
-
-  svg {
-    height: var.$small;
-    margin-right: 0.5rem;
-    width: auto;
-  }
-
-  &:hover {
-    background-color: var.$btn-hover;
-    color: #fff;
-  }
-}
-
-section#map {
-  background-color: #e5e3df;
-  padding: 0;
-
-  iframe {
-    display: block;
-    height: 16rem;
-    width: 100%;
   }
 }
 

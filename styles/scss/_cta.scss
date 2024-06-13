@@ -1,0 +1,36 @@
+@use "variables" as var;
+
+#cta {
+  text-align: center;
+
+  a,
+  a:any-link {
+    align-items: center;
+    background-color: var.$btn;
+    border-radius: 0.5rem;
+    box-shadow: var.$sh1;
+    color: #fff;
+    display: inline-flex;
+    font-size: var.$small;
+    font-family: var.$font2;
+    font-weight: 700;
+    justify-content: center;
+    letter-spacing: 0.0625rem;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color var.$trs;
+
+    svg {
+      height: var.$small;
+      margin-right: 0.5rem;
+      width: auto;
+    }
+
+    &:hover {
+      background-color: var.$btn-hover;
+      color: #fff;
+    }
+  }
+}

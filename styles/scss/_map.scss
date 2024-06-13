@@ -1,0 +1,10 @@
+section#map {
+  background-color: #e5e3df; // Google Maps' original background-color
+  padding: 0;
+
+  iframe {
+    display: block;
+    height: 16rem;
+    width: 100%;
+  }
+}
