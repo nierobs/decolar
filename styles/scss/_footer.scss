@@ -5,28 +5,25 @@ footer {
   background-color: var.$footer__bg;
   color: var.$footer__txt;
   font-size: var.$small;
-  padding: 1rem 0;
-  text-align: center;
 
-  .wrapper {
+  .grid {
     display: grid;
-    gap: 1rem;
-  }
-
-  .item {
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
   }
 
   ul {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 1rem 0;
+    gap: 0.5rem;
+    list-style: none;
+  }
 
-    li.header {
+  li {
+    text-align: center;
+
+    &.header {
       font-family: var.$font2;
       font-size: 1rem;
       font-weight: 700;
@@ -41,23 +38,22 @@ footer {
     &:hover {
       color: var.$footer__ln-hover;
     }
+  }
 
-    &.icon {
-      align-items: center;
-      display: flex;
-      gap: 0.5rem;
+  a.icon {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
 
-      svg {
-        height: var.$small;
-        width: auto;
-      }
+    svg {
+      height: var.$small;
+      width: auto;
     }
   }
 
-  .copyright {
+  #footnote {
     border-top: 1px solid var.$txt;
-    font-size: var.$small;
-    padding-top: 2rem;
+    padding: 1rem;
     text-align: center;
   }
 }
@@ -66,13 +62,64 @@ footer {
   footer {
     text-align: initial;
 
-    .wrapper {
+    .grid {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    ul {
-      align-items: flex-start;
-      justify-content: flex-start;
+    #info {
+      .grid__item {
+        &:nth-child(1) {
+          grid-column: 1;
+        }
+
+        &:nth-child(2) {
+          grid-column: 2;
+        }
+
+        &:nth-child(3) {
+          grid-column: 3;
+        }
+      }
+    }
+
+    #footnote {
+      .grid__item {
+        grid-column: 1 / 4;
+      }
+
+      ul {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@mixin large {
+  footer {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    #info {
+      .grid__item {
+        &:nth-child(1) {
+          grid-column: 2;
+        }
+
+        &:nth-child(2) {
+          grid-column: 3;
+        }
+
+        &:nth-child(3) {
+          grid-column: 4;
+        }
+      }
+    }
+
+    #footnote {
+      .grid__item {
+        grid-column: 2 / 5;
+      }
     }
   }
 }

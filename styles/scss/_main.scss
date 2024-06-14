@@ -1,0 +1,34 @@
+@use "variables" as var;
+
+main {
+  section:nth-child(even) {
+    background-color: var.$bg2
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+}
+
+@mixin medium {
+  main {
+    .grid {
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+  }
+}
+
+@mixin large {
+  main {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid__item {
+      grid-column: 2 / 5;
+    }
+  }
+}

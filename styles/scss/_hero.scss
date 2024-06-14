@@ -3,19 +3,11 @@
 
 #hero {
   background: url(../../images/sea.webp) center top / cover no-repeat var.$hero__bg;
-  padding: 0;
 
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.375)
-  }
-
-  .container {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
+  .grid {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.375);
     min-height: 100vh;
-    justify-content: center;
-    padding: 4rem 1rem;
   }
 
   .video {
