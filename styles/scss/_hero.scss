@@ -6,7 +6,7 @@
   .grid {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   /*.video {
@@ -69,3 +69,11 @@
     }
   }
 }
+
+@mixin medium {
+  #hero .grid {
+    min-height: 100vh;
+  }
+}
+
+@mixin large {}
