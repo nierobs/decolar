@@ -46,25 +46,25 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: auto;
-      z-index: 2;
+      z-index: 3;
     }
 
-    .svg-fill::before {
-      color: #fff;
-      content: "🞂";
-      font-size: 3rem;
+    .svg-background {
+      background-color: #fff;
+      height: 2rem;
       left: 50%;
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      z-index: 1;
+      width: 2rem;
+      z-index: 2;
     }
 
     &:hover {
       color: darken(#f00, 6.25%);
 
-      .svg-fill::before {
-        color: darken(#fff, 6.25%);
+      .svg-background {
+        background-color: darken(#fff, 6.25%);
       }
     }
   }
