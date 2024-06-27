@@ -56,6 +56,15 @@ footer {
     padding: 1rem;
     text-align: center;
   }
+
+  #author {
+    padding-top: 1rem;
+
+    img {
+      height: 1rem;
+      width: auto;
+    }
+  }
 }
 
 @mixin medium {
