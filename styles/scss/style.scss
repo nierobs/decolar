@@ -4,13 +4,16 @@
 @use "cta";
 @use "map";
 @use "footer";
+@use "fancybox";
 
 @media only screen and (min-width: 768px) {
   @include main.medium;
   @include footer.medium;
+  @include fancybox.medium;
 }
 
 @media only screen and (min-width: 1152px) {
   @include main.large;
   @include footer.large;
+  @include fancybox.large;
 }

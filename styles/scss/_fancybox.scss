@@ -1,0 +1,13 @@
+@mixin medium {
+  .fancybox__content {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+@mixin large {
+  .fancybox__content {
+    width: calc(60% - 0.5rem) !important;
+    height: auto !important;
+  }
+}
