@@ -28,7 +28,7 @@
   }*/
 
   [data-fancybox] {
-      color: #f00;
+      color: #c00;
 
       &:hover {
         color: darken(#f00, 6.25%);
