@@ -27,20 +27,16 @@
     }
   }*/
 
-  [data-fancybox] {
-      color: #f00;
-
-      &:hover {
-        color: darken(#f00, 6.25%);
-      }
-  }
-
   .video {
     background: url(../../images/video.webp) center / cover no-repeat #000;
     border-radius: 0.5rem;
     padding-bottom: 56.25%;
     position: relative;
     width: 100%;
+  }
+
+  [data-fancybox] {
+    color: #f00;
 
     svg {
       filter: drop-shadow(var.$sh2);
@@ -50,6 +46,26 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: auto;
+      z-index: 2;
     }
-  } 
+
+    .svg-fill::before {
+      color: #fff;
+      content: "🞂";
+      font-size: 3rem;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    &:hover {
+      color: darken(#f00, 6.25%);
+
+      .svg-fill::before {
+        color: darken(#fff, 6.25%);
+      }
+    }
+  }
 }
