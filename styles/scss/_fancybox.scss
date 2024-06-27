@@ -7,7 +7,7 @@
 
 @mixin large {
   .fancybox__content {
-    width: calc(60% - 0.5rem) !important;
+    width: 60% !important;
     height: auto !important;
   }
 }
