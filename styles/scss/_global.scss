@@ -55,7 +55,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 2rem 1rem;
+  gap: 2rem 0.5rem;
   padding: 2rem 0.5rem;
 }
 
@@ -116,7 +116,7 @@ strong {
 
 @mixin medium {
   .grid {
-    gap: 1rem;
+    gap: 2rem 1rem;
     padding: 4rem 1rem;
   }
 }
