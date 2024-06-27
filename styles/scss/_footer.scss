@@ -6,12 +6,6 @@ footer {
   color: var.$footer__txt;
   font-size: var.$small;
 
-  .grid {
-    display: grid;
-    gap: 2rem;
-    padding: 2rem 1rem;
-  }
-
   ul {
     align-items: center;
     display: flex;
@@ -24,7 +18,7 @@ footer {
     text-align: center;
 
     &.header {
-      font-family: var.$font2;
+      font-family: var.$f2;
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.0625rem;
@@ -53,16 +47,15 @@ footer {
 
   #footnote {
     border-top: 1px solid var.$txt;
+    gap: 1rem;
     padding: 1rem;
     text-align: center;
-  }
 
-  #author {
-    padding-top: 1rem;
-
-    img {
-      height: 1rem;
-      width: auto;
+    .grid__item:nth-child(2) {
+      img {
+        height: 1rem;
+        width: auto;
+      }
     }
   }
 }

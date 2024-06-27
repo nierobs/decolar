@@ -4,22 +4,9 @@ main {
   section:nth-child(even) {
     background-color: var.$bg2
   }
-
-  .grid {
-    display: grid;
-    gap: 1rem;
-    padding: 2rem 1rem;
-  }
 }
 
-@mixin medium {
-  main {
-    .grid {
-      gap: 2rem;
-      padding: 4rem 2rem;
-    }
-  }
-}
+@mixin medium {}
 
 @mixin large {
   main {

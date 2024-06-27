@@ -71,8 +71,10 @@
 }
 
 @mixin medium {
-  #hero .grid {
-    min-height: 100vh;
+  #hero {
+    .grid {
+      min-height: 100vh;
+    }
   }
 }
 
