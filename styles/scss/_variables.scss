@@ -9,7 +9,7 @@ $txt: hsl(240, 18.75%, 12.5%);
 $ln: hsl(225, 81.25%, 56.25%);
 $ln-hover: darken($ln, 6.25%);
 $btn: hsl(240, 18.75%, 12.5%);
-$btn-hover: lighten($btn, 6.25%);
+$btn-hover: darken($btn, 6.25%);
 
 $h1: 2rem;
 $h2: 1.4142rem;
