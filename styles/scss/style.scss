@@ -2,6 +2,7 @@
 @use "main";
 @use "hero";
 @use "cta";
+@use "about";
 @use "map";
 @use "footer";
 @use "fancybox";
@@ -9,6 +10,7 @@
 @media only screen and (min-width: 768px) {
   @include global.medium;
   @include main.medium;
+  @include about.medium;
   @include footer.medium;
   @include fancybox.medium;
 }
@@ -16,6 +18,7 @@
 @media only screen and (min-width: 1152px) {
   @include global.large;
   @include main.large;
+  @include about.large;
   @include footer.large;
   @include fancybox.large;
 }

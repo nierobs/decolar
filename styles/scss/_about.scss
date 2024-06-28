@@ -1,0 +1,23 @@
+@use "variables" as var;
+
+#about {
+  img {
+    background-color: var.$bg2;
+    border-radius: 50%;
+    display: block;
+    height: 11.3137rem;
+    margin: 0 auto 2rem;
+    width: auto;
+  }
+}
+
+@mixin medium {
+  #about {
+    img {
+      float: left;
+      margin: 0 2rem 1rem 0;
+    }
+  }
+}
+
+@mixin large {}

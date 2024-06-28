@@ -3,10 +3,11 @@
 
 @font-face {
   font-display: swap;
-  font-family: Montserrat;
+  font-family: Archivo;
+  font-stretch: 62.5% 125%;
   font-style: normal;
   font-weight: 100 900;
-  src: local(Montserrat), url(../../fonts/Montserrat-VariableFont_wght.ttf) format(truetype) tech(variations);
+  src: local(Archivo), url(../../fonts/Archivo-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 @font-face {
@@ -59,10 +60,17 @@ body {
   padding: 2rem 0.5rem;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 h1,
 .h1 {
   font-family: var.$f2;
   font-size: var.$h1;
+  font-stretch: 106.25%;
   font-weight: 700;
   letter-spacing: 0.0625rem;
   line-height: var.$lh2;
@@ -72,16 +80,16 @@ h2,
 .h2 {
   font-family: var.$f2;
   font-size: var.$h2;
-  font-weight: 500;
+  font-stretch: 106.25%;
+  font-weight: 700;
   letter-spacing: 0.0625rem;
   line-height: var.$lh2;
 }
 
 h3,
 .h3 {
-  font-family: var.$f2;
   font-size: var.$h3;
-  letter-spacing: 0.0625rem;
+  font-weight: 500;
   margin: 1rem 0;
 }
 
