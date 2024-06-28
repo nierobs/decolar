@@ -6,19 +6,43 @@
     border-radius: 50%;
     display: block;
     height: auto;
-    margin: 0 auto 2rem;
-    width: calc(50% - 1rem);
+    margin: 0 auto;
+    width: 11.3137rem;
   }
 }
 
 @mixin medium {
   #about {
-    img {
-      float: left;
-      margin: 0 1rem 1rem 0;
-      width: calc(20% - 1rem);
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid__item {
+      &:nth-child(1) {
+        grid-column: 1;
+      }
+
+      &:nth-child(2) {
+        grid-column: 2 / 4;
+      }
     }
   }
 }
 
-@mixin large {}
+@mixin large {
+  #about {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid__item {
+      &:nth-child(1) {
+        grid-column: 2;
+      }
+
+      &:nth-child(2) {
+        grid-column: 3 / 5;
+      }
+    }
+  }
+}

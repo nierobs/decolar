@@ -48,9 +48,12 @@ footer {
 
   #footnote {
     border-top: 1px solid var.$txt;
-    gap: 1rem;
-    padding: 1rem;
     text-align: center;
+
+    .grid {
+      gap: 1rem;
+      padding: 1rem;
+    }
 
     .grid__item:nth-child(2) {
       img {
