@@ -6,11 +6,11 @@ $hero__overlay: rgba(0, 0, 0, 0.2);
 $bg1: hsl(240, 16%, 96%);
 $bg2: hsl(240, 16%, 92%);
 
-$txt: hsl(240, 16%, 12%);
+$txt: hsl(240, 16%, 16%);
 $ln: hsl(225, 80%, 52%);
-$ln-hover: darken($ln, 8%);
-$btn: hsl(240, 16%, 12%);
-$btn-hover: lighten($btn, 8%);
+$ln-hover: darken($ln, 12%);
+$btn: $txt;
+$btn-hover: lighten($btn, 12%);
 
 $h1: 2rem;
 $h2: 1.4142rem;
@@ -33,3 +33,4 @@ $footer__bg: hsl(240, 16%, 16%);
 $footer__txt: #fff;
 $footer__ln: #fff;
 $footer__ln-hover: darken($footer__ln, 8%);
+$footer__bd: lighten($footer__bg, 12%);
