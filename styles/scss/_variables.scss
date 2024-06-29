@@ -1,15 +1,16 @@
 // HERO
-$hero__bg: hsl(240, 18.75%, 18.75%);
+$hero__bg: url(../../images/sea.webp) center top / cover no-repeat hsl(240, 16%, 20%);
+$hero__overlay: rgba(0, 0, 0, 0.2);
 
 // BODY
-$bg1: #fff;
-$bg2: hsl(240, 18.75%, 93.75%);
+$bg1: hsl(240, 16%, 96%);
+$bg2: hsl(240, 16%, 92%);
 
-$txt: hsl(240, 18.75%, 12.5%);
-$ln: hsl(225, 81.25%, 56.25%);
-$ln-hover: darken($ln, 6.25%);
-$btn: hsl(240, 18.75%, 12.5%);
-$btn-hover: darken($btn, 6.25%);
+$txt: hsl(240, 16%, 12%);
+$ln: hsl(225, 80%, 52%);
+$ln-hover: darken($ln, 8%);
+$btn: hsl(240, 16%, 12%);
+$btn-hover: lighten($btn, 8%);
 
 $h1: 2rem;
 $h2: 1.4142rem;
@@ -19,8 +20,8 @@ $small: 0.8409rem;
 $lh1: 1.6818;
 $lh2: 1.1892;
 
-$sh1: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.1875);
-$sh2: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.1875);
+$sh1: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
+$sh2: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.2);
 
 $f1: "Noto Sans", sans-serif;
 $f2: Archivo, sans-serif;
@@ -28,7 +29,7 @@ $f2: Archivo, sans-serif;
 $trs: 250ms ease-out;
 
 // FOOTER
-$footer__bg: hsl(240, 18.75%, 18.75%);
+$footer__bg: hsl(240, 16%, 16%);
 $footer__txt: #fff;
 $footer__ln: #fff;
-$footer__ln-hover: darken($footer__ln, 6.25%);
+$footer__ln-hover: darken($footer__ln, 8%);
