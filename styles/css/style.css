@@ -208,8 +208,8 @@ main section:nth-child(even) {
   display: block;
   height: auto;
   margin: 0 auto;
+  max-width: 12.699208rem;
   width: 100%;
-  max-width: 10.079368rem;
 }
 
 section#map iframe {
