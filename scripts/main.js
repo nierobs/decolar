@@ -1,1 +1,5 @@
-Fancybox.bind("[data-fancybox]");
+'use strict'
+
+window.addEventListener('load', () => {
+  //
+};

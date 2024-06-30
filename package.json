@@ -2,8 +2,5 @@
   "name": "decolar",
   "version": "1.0.0",
   "author": "Robson Niemeyer (https://nierobs.github.io)",
-  "license": "ISC",
-  "dependencies": {
-    "@fancyapps/ui": "^5.0.36"
-  }
+  "license": "ISC"
 }

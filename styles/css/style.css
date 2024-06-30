@@ -123,23 +123,6 @@ main section:nth-child(even) {
 
 #hero {
   background: url(../../images/beach.webp) center/cover no-repeat;
-  /*.video {
-    background-color: #000; // YouTube Player's original background-color
-    border-radius: 0.5rem;
-    padding-bottom: 56.25%;
-    position: relative;
-    width: 100%;
-
-    iframe {
-      border-radius: 0.5rem;
-      box-shadow: var.$sh1;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-  }*/
 }
 #hero .grid {
   align-items: center;
@@ -147,40 +130,20 @@ main section:nth-child(even) {
   min-height: 100svh;
 }
 #hero .video {
-  background: url(../../images/video.webp) center/cover no-repeat #000;
+  background-color: hsl(240, 16%, 16%);
   border-radius: 0.5rem;
   padding-bottom: 56.25%;
   position: relative;
   width: 100%;
 }
-#hero [data-fancybox] {
-  color: #f00;
-}
-#hero [data-fancybox] svg {
-  filter: drop-shadow(0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.2));
-  height: 4rem;
-  left: 50%;
+#hero .video iframe {
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
+  height: 100%;
+  left: 0;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-  z-index: 3;
-}
-#hero [data-fancybox] .svg-background {
-  background-color: #fff;
-  height: 2rem;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 2rem;
-  z-index: 2;
-}
-#hero [data-fancybox]:hover {
-  color: #df0000;
-}
-#hero [data-fancybox]:hover .svg-background {
-  background-color: #efefef;
+  top: 0;
+  width: 100%;
 }
 
 #cta {
@@ -227,9 +190,6 @@ main section:nth-child(even) {
   max-width: 11.3137rem;
 }
 
-section#map {
-  background-color: #e5e3df;
-}
 section#map iframe {
   display: block;
   height: 18rem;

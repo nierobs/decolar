@@ -9,8 +9,8 @@
     min-height: 100svh;
   }
 
-  /*.video {
-    background-color: #000; // YouTube Player's original background-color
+  .video {
+    background-color: var.$footer_background;
     border-radius: 0.5rem;
     padding-bottom: 56.25%;
     position: relative;
@@ -18,54 +18,12 @@
 
     iframe {
       border-radius: 0.5rem;
-      box-shadow: var.$sh1;
+      box-shadow: var.$shadow;
       height: 100%;
       left: 0;
       position: absolute;
       top: 0;
       width: 100%;
-    }
-  }*/
-
-  .video {
-    background: url(../../images/video.webp) center / cover no-repeat #000;
-    border-radius: 0.5rem;
-    padding-bottom: 56.25%;
-    position: relative;
-    width: 100%;
-  }
-
-  [data-fancybox] {
-    color: #f00;
-
-    svg {
-      filter: drop-shadow(var.$shadow_small);
-      height: 4rem;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: auto;
-      z-index: 3;
-    }
-
-    .svg-background {
-      background-color: #fff;
-      height: 2rem;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 2rem;
-      z-index: 2;
-    }
-
-    &:hover {
-      color: darken(#f00, 6.25%);
-
-      .svg-background {
-        background-color: darken(#fff, 6.25%);
-      }
     }
   }
 }
