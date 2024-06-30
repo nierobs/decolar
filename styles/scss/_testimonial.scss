@@ -1,0 +1,44 @@
+@use 'variables' as var;
+
+#testimonial {
+  .grid__item {
+    display: flex;
+    gap: 1rem;
+
+    div {
+      flex: 25% 75%;
+    }
+  }
+
+  .testimonial__image {
+    background: var.$footer_background;
+    border: 1px solid var.$border;
+    border-radius: 50%;
+    display: block;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .testimonial__title {
+    font-weight: 500;
+    margin-top: 0;
+  }
+}
+
+@mixin medium {}
+
+@mixin large {
+  #testimonial {
+    .grid__item:nth-child(2) {
+      grid-column: 2 / 4;
+    }
+
+    .grid__item:nth-child(3) {
+      grid-column: 3 / 5;
+    }
+
+    .grid__item:nth-child(4) {
+      grid-column: 2 / 4;
+    }
+  }
+}

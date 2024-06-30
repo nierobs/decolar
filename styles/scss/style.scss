@@ -2,6 +2,7 @@
 @use "main";
 @use "hero";
 @use "cta";
+@use "testimonial";
 @use "about";
 @use "map";
 @use "footer";
@@ -12,6 +13,7 @@
   @include main.medium;
   @include hero.medium;
   @include cta.medium;
+  @include testimonial.medium;
   @include about.medium;
   @include map.medium;
   @include footer.medium;
@@ -23,6 +25,7 @@
   @include main.large;
   @include hero.large;
   @include cta.large;
+  @include testimonial.large;
   @include about.large;
   @include map.large;
   @include footer.large;
