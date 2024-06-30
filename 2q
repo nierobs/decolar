@@ -127,21 +127,12 @@ strong {
 @mixin medium {
   .grid {
     gap: 2rem 1rem;
-    grid-template-columns: repeat(3, 1fr);
     padding: 4rem 1rem;
-
-    .grid__item {
-      grid-column: 1 / 4;
-    }
   }
 }
 
 @mixin large {
-  .grid {
-    grid-template-columns: repeat(5, 1fr);
-
-    .grid__item {
-      grid-column: 2 / 5;
+    .grid {
+      grid-template-columns: repeat(6, 1fr);
     }
-  }
 }

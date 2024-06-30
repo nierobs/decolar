@@ -78,14 +78,4 @@
   }
 }
 
-@mixin large {
-  #hero {
-    .grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-    .grid__item {
-      grid-column: 2 / 5;
-    }
-  }
-}
+@mixin large {}
