@@ -1,36 +1,34 @@
-// HERO
-$hero__bg: url(../../images/sea.webp) center top / cover no-repeat hsl(240, 16%, 20%);
-$hero__overlay: rgba(0, 0, 0, 0.2);
+$header_background: url(../../images/sea.webp) center top / cover no-repeat hsl(240, 16%, 20%);
+$header_background_overlay: rgba(0, 0, 0, 0.2);
+$header_font: Archivo, sans-serif;
+$header_font-stretch: 108%;
+$header_letter-spacing: 0.0625rem;
+$header_line-height: 1.27202;
 
-// BODY
-$bg1: #fff;
-$bg2: hsl(240, 16%, 92%);
-
-$txt: hsl(240, 16%, 16%);
-$ln: hsl(225, 80%, 52%);
-$ln-hover: darken($ln, 12%);
-$btn: $txt;
-$btn-hover: lighten($btn, 12%);
+$background: #fff;
+$background_alt: hsl(240, 16%, 92%);
+$color: hsl(240, 16%, 16%);
+$font: "Open Sans", sans-serif;
+$line-height: 1.618034;
 
 $h1: 2rem;
 $h2: 1.587401rem;
 $h3: 1.259921rem;
 $small: 0.793701rem;
 
-$lh1: 1.618034;
-$lh2: 1.27202;
+$a: hsl(225, 80%, 52%);
+$a_hover: darken($a, 12%);
+$transition: 250ms ease-out;
 
-$sh1: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
-$sh2: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.2);
+$button_background: $color;
+$button_color: #fff;
+$button_hover_background: lighten($button_background, 12%);
 
-$f1: "Noto Sans", sans-serif;
-$f2: Archivo, sans-serif;
+$shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
+$shadow_small: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.2);
 
-$trs: 250ms ease-out;
-
-// FOOTER
-$footer__bg: hsl(240, 16%, 16%);
-$footer__txt: #fff;
-$footer__ln: #fff;
-$footer__ln-hover: darken($footer__ln, 8%);
-$footer__bd: lighten($footer__bg, 12%);
+$footer_background: hsl(240, 16%, 16%);
+$footer_color: #fff;
+$footer_a: #fff;
+$footer_a_hover: darken($footer_a, 8%);
+$footer_hr: lighten($footer_background, 12%);

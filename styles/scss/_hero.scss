@@ -1,11 +1,11 @@
 @use "variables" as var;
 
 #hero {
-  background: var.$hero__bg;
+  background: var.$header_background;
 
   .grid {
     align-items: center;
-    background-color: var.$hero__overlay;
+    background-color: var.$header_background_overlay;
     min-height: 100svh;
   }
 
@@ -39,7 +39,7 @@
     color: #f00;
 
     svg {
-      filter: drop-shadow(var.$sh2);
+      filter: drop-shadow(var.$shadow_small);
       height: 4rem;
       left: 50%;
       position: absolute;

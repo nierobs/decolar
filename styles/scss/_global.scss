@@ -12,20 +12,20 @@
 
 @font-face {
   font-display: swap;
-  font-family: "Noto Sans";
-  font-stretch: 62.5% 100%;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
   font-style: normal;
-  font-weight: 100 900;
-  src: local(Noto Sans), local(NotoSans), url(../../fonts/NotoSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+  font-weight: 300 800;
+  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Noto Sans";
-  font-stretch: 62.5% 100%;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
   font-style: italic;
-  font-weight: 100 900;
-  src: local(Noto Sans), local(NotoSans), url(../../fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
+  font-weight: 300 800;
+  src: local(Open Sans), local(OpenSans), url(../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
 }
 
 *,
@@ -47,9 +47,9 @@ html {
 }
 
 body {
-  background-color: var.$bg1;
-  color: var.$txt;
-  font: 400 1rem string.unquote("/") var.$lh1 var.$f1;
+  background-color: var.$background;
+  color: var.$color;
+  font: 400 1rem string.unquote("/") var.$line-height var.$font;
   min-height: 100%;
   text-rendering: optimizeLegibility;
 }
@@ -68,30 +68,30 @@ body {
 
 h1,
 .h1 {
-  font-family: var.$f2;
+  font-family: var.$header_font;
   font-size: var.$h1;
-  font-stretch: 108%;
+  font-stretch: var.$header_font-stretch;
   font-weight: 700;
-  letter-spacing: 0.0625rem;
-  line-height: var.$lh2;
+  letter-spacing: var.$header_letter-spacing;
+  line-height: var.$header_line-height;
 }
 
 h2,
 .h2 {
-  font-family: var.$f2;
+  font-family: var.$header_font;
   font-size: var.$h2;
-  font-stretch: 108%;
+  font-stretch: var.$header_font-stretch;
   font-weight: 700;
-  letter-spacing: 0.0625rem;
-  line-height: var.$lh2;
+  letter-spacing: var.$header_letter-spacing;
+  line-height: var.$header_line-height;
 }
 
 h3,
 .h3 {
-  font-family: var.$f2;
+  font-family: var.$header_font;
   font-size: var.$h3;
-  font-stretch: 108%;
-  letter-spacing: 0.0625rem;
+  font-stretch: var.$header_font-stretch;
+  letter-spacing: var.$header_letter-spacing;
   margin: 1rem 0;
 }
 
@@ -109,14 +109,14 @@ p {
 
 a,
 a:any-link {
-  color: var.$ln;
+  color: var.$a;
   text-decoration: none;
-  transition: color var.$trs;
+  transition: color var.$transition;
   user-select: all;
   overflow-wrap: break-word;
 
   &:hover {
-    color: var.$ln-hover;
+    color: var.$a_hover;
   }
 }
 
