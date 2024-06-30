@@ -122,7 +122,7 @@ main section:nth-child(even) {
 }
 
 #hero {
-  background: url(../../images/beach.webp) center top/cover no-repeat;
+  background: url(../../images/beach.webp) center/cover no-repeat;
   /*.video {
     background-color: #000; // YouTube Player's original background-color
     border-radius: 0.5rem;
