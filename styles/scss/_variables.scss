@@ -23,12 +23,12 @@ $h3Font: 500 $h3 string.unquote("/") 1.618034 "Archivo", sans-serif;
 $small: 0.707107rem;
 
 $linkColor: hsl(225, 80%, 52%);
-$linkHoverColor: lighten($linkColor, 12%);
+$linkColorHover: lighten($linkColor, 12%);
 
 $buttonBackground: $color;
-$buttonHoverBackground: lighten($buttonBackground, 12%);
+$buttonBackgroundHover: lighten($buttonBackground, 12%);
 $buttonColor: #fff;
-$buttonHoverColor: $buttonColor;
+$buttonColorHover: $buttonColor;
 $buttonFont: 700 $small string.unquote("/") 1.27202 "Archivo", sans-serif; 
 $buttonIconSize: $small;
 
@@ -43,5 +43,5 @@ $teamImageSize: 8rem;
 $footerBackground: hsl(240, 16%, 16%);
 $footerColor: #fff;
 $footerLinkColor: $footerColor;
-$footerLinkHoverColor: darken($footerLinkColor, 12%);
+$footerLinkColorHover: darken($footerLinkColor, 12%);
 $footerFootnoteBorderColor: lighten($footerBackground, 12%);

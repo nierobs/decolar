@@ -2,14 +2,14 @@
 @use "header";
 @use "main";
 @use "footer";
-@use "comments";
+@use "testimonials";
 
 @media only screen and (min-width: 768px) {
   @include global.medium;
   @include header.medium;
   @include main.medium;
   @include footer.medium;
-  @include comments.medium;
+  @include testimonials.medium;
 }
 
 @media only screen and (min-width: 1152px) {
@@ -17,5 +17,5 @@
   @include header.large;
   @include main.large;
   @include footer.large;
-  @include comments.large;
+  @include testimonials.large;
 }

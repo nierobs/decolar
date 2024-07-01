@@ -104,7 +104,7 @@ a:any-link {
   user-select: all;
 
   &:hover {
-    color: var.$linkHoverColor;
+    color: var.$linkColorHover;
   }
 }
 
@@ -127,8 +127,8 @@ a.button:any-link {
   width: 100%;
 
   &:hover {
-    background: var.$buttonHoverBackground;
-    color: var.$buttonHoverColor;
+    background: var.$buttonBackgroundHover;
+    color: var.$buttonColorHover;
   }
 
   svg {
