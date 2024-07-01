@@ -10,13 +10,13 @@ main {
   }
 }
 
-section#about {
+section#team {
   .image {
     margin: 0 auto 1rem;
-    max-width: var.$aboutImageSize;
+    max-width: var.$teamImageSize;
 
     .image__portrait {
-      background: var.$aboutImage center / cover no-repeat var.$borderColor;
+      background: var.$teamImage center / cover no-repeat var.$borderColor;
       border: 1px solid var.$borderColor;
       border-radius: 50%;
       padding-bottom: 100%;

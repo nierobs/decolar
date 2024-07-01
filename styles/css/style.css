@@ -107,7 +107,7 @@ a.button:any-link {
   align-items: center;
   background: hsl(240, 16%, 16%);
   border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
+  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.08);
   color: #fff;
   display: inline-flex;
   font: 700 0.707107rem / 1.27202 "Archivo", sans-serif;
@@ -147,7 +147,7 @@ header .video {
 }
 header .video iframe {
   border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
+  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.08);
   height: 100%;
   left: 0;
   position: absolute;
@@ -162,11 +162,11 @@ main .cta {
   text-align: center;
 }
 
-section#about .image {
+section#team .image {
   margin: 0 auto 1rem;
   max-width: 9.1529820414rem;
 }
-section#about .image .image__portrait {
+section#team .image .image__portrait {
   background: url("../../images/flavio_da_costa_guimaraes.webp") center/cover no-repeat hsl(240, 16%, 88%);
   border: 1px solid hsl(240, 16%, 88%);
   border-radius: 50%;
@@ -230,7 +230,7 @@ footer #footnote .grid__item:nth-child(2) img {
 #comments {
   background: hsl(240, 16%, 96%);
 }
-#comments .comment {
+#comments .grid__item {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -241,20 +241,21 @@ footer #footnote .grid__item:nth-child(2) img {
   border-radius: 50%;
   display: block;
   height: 5.656854rem;
+  margin: 0 auto;
   width: 5.656854rem;
 }
-#comments .comment__card {
+#comments .card {
   background: #fff;
-  border: 1px solid hsl(240, 16%, 88%);
+  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.08);
   border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
+  flex: 1 1 auto;
   padding: 1rem;
 }
-#comments .comment__header {
+#comments .card__header {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-#comments .comment__user {
+#comments .card__header .user {
   align-items: center;
   color: hsl(240, 16%, 52%);
   display: inline-flex;
@@ -263,7 +264,7 @@ footer #footnote .grid__item:nth-child(2) img {
   gap: 0.25rem;
   margin-left: 0.25rem;
 }
-#comments .comment__user svg {
+#comments .card__header .user svg {
   height: 0.707107rem;
   width: auto;
 }
@@ -302,13 +303,11 @@ footer #footnote .grid__item:nth-child(2) img {
     align-items: center;
   }
   #comments .grid__item {
-    gap: 1rem;
-  }
-  #comments .comment {
     flex-direction: row;
+    gap: 1rem;
     margin-bottom: 1rem;
   }
-  #comments .comment:last-of-type {
+  #comments .grid__item:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -334,10 +333,10 @@ footer #footnote .grid__item:nth-child(2) img {
   footer #info .grid__item:nth-child(3) {
     grid-column: 4;
   }
-  #comments .comment:nth-child(odd) {
+  #comments .grid__item:nth-child(odd) {
     grid-column: 2/4;
   }
-  #comments .comment:nth-child(even) {
+  #comments .grid__item:nth-child(even) {
     grid-column: 3/5;
   }
 }

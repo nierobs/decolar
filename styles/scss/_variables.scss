@@ -7,7 +7,7 @@ $background: #fff;
 $backgroundAlt: hsl(240, 16%, 92%);
 $borderColor: hsl(240, 16%, 88%);
 $borderRadius: 0.5rem;
-$boxShadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
+$boxShadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.08);
 $color: hsl(240, 16%, 16%);
 $font: 400 1rem string.unquote("/") 1.618034 "Open Sans", sans-serif;
 $fontStretch: 108%;
@@ -37,8 +37,8 @@ $headerImageOverlay: rgba(0, 0, 0, 0.84);
 
 $commentImageSize: 5.656854rem;
 
-$aboutImage: url("../../images/flavio_da_costa_guimaraes.webp");
-$aboutImageSize: $commentImageSize * $goldenRatio;
+$teamImage: url("../../images/flavio_da_costa_guimaraes.webp");
+$teamImageSize: $commentImageSize * $goldenRatio;
 
 $footerBackground: hsl(240, 16%, 16%);
 $footerColor: #fff;

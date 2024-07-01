@@ -2,8 +2,8 @@
 
 #comments {
   background: hsl(240, 16%, 96%);
-  
-  .comment {
+
+  .grid__item {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -15,34 +15,35 @@
     border-radius: 50%;
     display: block;
     height: var.$commentImageSize;
+    margin: 0 auto;
     width: var.$commentImageSize;
   }
 
-  .comment__card {
+  .card {
     background: #fff;
-    border: 1px solid var.$borderColor;
-    border-radius: var.$borderRadius;
     box-shadow: var.$boxShadow;
+    border-radius: var.$borderRadius;
+    flex: 1 1 auto;
     padding: 1rem;
   }
 
-  .comment__header {
+  .card__header {
     font-weight: 700;
     margin-bottom: 1rem;
-  }
 
-  .comment__user {
-    align-items: center;
-    color: hsl(240, 16%, 52%);
-    display: inline-flex;
-    font-size: var.$small;
-    font-weight: 400;
-    gap: 0.25rem;
-    margin-left: 0.25rem;
+    .user {
+      align-items: center;
+      color: hsl(240, 16%, 52%);
+      display: inline-flex;
+      font-size: var.$small;
+      font-weight: 400;
+      gap: 0.25rem;
+      margin-left: 0.25rem;
 
-    svg {
-      height: var.$small;
-      width: auto;
+      svg {
+        height: var.$small;
+        width: auto;
+      }
     }
   }
 }
@@ -50,11 +51,8 @@
 @mixin medium {
   #comments {
     .grid__item {
-      gap: 1rem;
-    }
-
-    .comment {
       flex-direction: row;
+      gap: 1rem;
       margin-bottom: 1rem;
 
       &:last-of-type {
@@ -66,11 +64,11 @@
 
 @mixin large {
   #comments {
-    .comment:nth-child(odd) {
+    .grid__item:nth-child(odd) {
       grid-column: 2 / 4;
     }
 
-    .comment:nth-child(even) {
+    .grid__item:nth-child(even) {
       grid-column: 3 / 5;
     }
   }
