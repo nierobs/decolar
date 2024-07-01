@@ -11,6 +11,13 @@ main {
 }
 
 section#team {
+  background: url("../../images/louisepbarros.webp") center / cover no-repeat hsl(240, 16%, 96%);
+  color: #fff;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.88);
+  }
+
   .image {
     margin: 0 auto;
     max-width: var.$teamImageSize;

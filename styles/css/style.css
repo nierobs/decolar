@@ -138,7 +138,7 @@ header {
 }
 header .grid {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.84);
+  background-color: rgba(0, 0, 0, 0.88);
   min-height: 100svh;
 }
 header .video {
@@ -164,6 +164,13 @@ main .cta {
   text-align: center;
 }
 
+section#team {
+  background: url("../../images/louisepbarros.webp") center/cover no-repeat hsl(240, 16%, 96%);
+  color: #fff;
+}
+section#team .overlay {
+  background: rgba(0, 0, 0, 0.88);
+}
 section#team .image {
   margin: 0 auto;
   max-width: 8rem;
