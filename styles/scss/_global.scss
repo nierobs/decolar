@@ -73,6 +73,7 @@ h2,
   font-stretch: var.$fontStretch;
   letter-spacing: var.$letterSpacing;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 h3,
@@ -147,6 +148,11 @@ a.button:any-link {
     .grid__item {
       grid-column: 1 / 4;
     }
+  }
+
+  h2,
+  .h2 {
+    text-align: left;
   }
 
   a.button,

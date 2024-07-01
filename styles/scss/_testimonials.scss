@@ -3,10 +3,22 @@
 #testimonials {
   background: hsl(240, 16%, 96%);
 
-  .grid__item {
+  .grid:nth-child(1) {
+    padding-bottom: 0;
+  }
+
+  .grid:nth-child(2) {
+    padding-top: 0;
+  }
+
+  .grid:nth-child(2) .grid__item {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1.618034rem;
   }
 
   img {
@@ -50,7 +62,7 @@
 
 @mixin medium {
   #testimonials {
-    .grid__item {
+    .grid:nth-child(2) .grid__item {
       flex-direction: row;
       gap: 1rem;
       margin-bottom: 1rem;
@@ -58,6 +70,11 @@
       &:last-of-type {
         margin-bottom: 0;
       }
+    }
+
+    h2,
+    .h2 {
+      text-align: center;
     }
 
     .card {
@@ -68,12 +85,14 @@
 
 @mixin large {
   #testimonials {
-    .grid__item:nth-child(odd) {
-      grid-column: 2 / 4;
-    }
+    .grid:nth-child(2) .grid__item {
+      &:nth-child(odd) {
+        grid-column: 2 / 4;
+      }
 
-    .grid__item:nth-child(even) {
-      grid-column: 3 / 5;
+      &:nth-child(even) {
+        grid-column: 3 / 5;
+      }
     }
   }
 }
