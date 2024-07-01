@@ -50,7 +50,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 2rem 0.5rem;
+  gap: 1rem 0.5rem;
   padding: 2rem 0.5rem;
 }
 
@@ -164,7 +164,7 @@ main .cta {
 }
 
 section#team .image {
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   max-width: 8rem;
 }
 section#team .image .image__portrait {
