@@ -1,33 +1,21 @@
 @use "global";
+@use "header";
 @use "main";
-@use "hero";
-@use "cta";
-@use "testimonial";
-@use "about";
-@use "map";
 @use "footer";
-@use "fancybox";
+@use "testimonial";
 
 @media only screen and (min-width: 768px) {
   @include global.medium;
+  @include header.medium;
   @include main.medium;
-  @include hero.medium;
-  @include cta.medium;
-  @include testimonial.medium;
-  @include about.medium;
-  @include map.medium;
   @include footer.medium;
-  @include fancybox.medium;
+  @include testimonial.medium;
 }
 
 @media only screen and (min-width: 1152px) {
   @include global.large;
+  @include header.large;
   @include main.large;
-  @include hero.large;
-  @include cta.large;
-  @include testimonial.large;
-  @include about.large;
-  @include map.large;
   @include footer.large;
-  @include fancybox.large;
+  @include testimonial.large;
 }

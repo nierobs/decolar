@@ -2,8 +2,8 @@
 @use "variables" as var;
 
 footer {
-  background-color: var.$footer_background;
-  color: var.$footer_color;
+  background: var.$footerBackground;
+  color: var.$footerColor;
   font-size: var.$small;
 
   ul {
@@ -18,20 +18,18 @@ footer {
     text-align: center;
 
     &.header {
-      font-family: var.$header_font;
-      font-size: 1rem;
-      font-stretch: var.$header_font-stretch;
-      font-weight: 500;
-      letter-spacing: var.$header_letter-spacing;
+      font: var.$h3Font;
+      font-stretch: var.$fontStretch;
+      letter-spacing: var.$letterSpacing;
     }
   }
 
   a,
   a:any-link {
-    color: var.$footer_a;
+    color: var.$footerLinkColor;
 
     &:hover {
-      color: var.$footer_a_hover;
+      color: var.$footerLinkHoverColor;
     }
   }
 
@@ -47,7 +45,7 @@ footer {
   }
 
   #footnote {
-    border-top: 1px solid var.$footer_hr;
+    border-top: 1px solid var.$footerFootnoteBorderColor;
     text-align: center;
 
     .grid {

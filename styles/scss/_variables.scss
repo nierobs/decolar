@@ -1,35 +1,42 @@
-$header_background: url(../../images/beach.webp) center / cover no-repeat;
-$header_background_overlay: rgba(0, 0, 0, 0.84);
-$header_font: Archivo, sans-serif;
-$header_font-stretch: 108%;
-$header_letter-spacing: 0.0625rem;
-$header_line-height: 1.27202;
+@use "sass:string";
 
 $background: #fff;
-$background_alt: hsl(240, 16%, 92%);
-$border: hsl(240, 16%, 88%);
+$backgroundAlt: hsl(240, 16%, 92%);
+$borderColor: hsl(240, 16%, 88%);
+$borderRadius: 0.5rem;
+$boxShadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
 $color: hsl(240, 16%, 16%);
-$font: "Open Sans", sans-serif;
-$line-height: 1.618034;
+$font: 400 1rem string.unquote("/") 1.618034 "Open Sans", sans-serif;
+$fontStretch: 108%;
+$letterSpacing: 0.0625rem;
+$transition: all 250ms ease-out;
 
 $h1: 2rem;
-$h2: 1.587401rem;
-$h3: 1.259921rem;
-$small: 0.793701rem;
+$h1Font: 700 $h1 string.unquote("/") 1.27202 "Archivo", sans-serif;
+$h2: 1.414214rem;
+$h2Font: 700 $h2 string.unquote("/") 1.27202 "Archivo", sans-serif;
+$h3: 1rem;
+$h3Font: 500 $h3 string.unquote("/") 1.27202 "Archivo", sans-serif;
+$small: 0.707107rem;
 
-$a: hsl(225, 80%, 52%);
-$a_hover: darken($a, 12%);
-$transition: 250ms ease-out;
+$linkColor: hsl(225, 80%, 52%);
+$linkHoverColor: lighten($linkColor, 12%);
 
-$button_background: $color;
-$button_color: #fff;
-$button_hover_background: lighten($button_background, 12%);
+$buttonBackground: $color;
+$buttonHoverBackground: lighten($buttonBackground, 12%);
+$buttonColor: #fff;
+$buttonHoverColor: $buttonColor;
+$buttonFont: 700 $small string.unquote("/") 1.27202 "Archivo", sans-serif; 
+$buttonIcon: $small;
 
-$shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
-$shadow_small: 0.0625rem 0.125rem 0.25rem hsla(0, 0%, 0%, 0.2);
+$headerImage: url("../../images/beach.webp");
+$headerImageOverlay: rgba(0, 0, 0, 0.84);
 
-$footer_background: hsl(240, 16%, 16%);
-$footer_color: #fff;
-$footer_a: #fff;
-$footer_a_hover: darken($footer_a, 8%);
-$footer_hr: lighten($footer_background, 12%);
+$aboutImage: url("../../images/flavio_da_costa_guimaraes.webp");
+$aboutImageSize: 11.313708rem;
+
+$footerBackground: hsl(240, 16%, 16%);
+$footerColor: #fff;
+$footerLinkColor: $footerColor;
+$footerLinkHoverColor: darken($footerLinkColor, 12%);
+$footerFootnoteBorderColor: lighten($footerBackground, 12%);

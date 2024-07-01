@@ -1,24 +1,23 @@
 @use "variables" as var;
 
-#hero {
-  background: var.$header_background;
+header {
+  background: var.$headerImage center / cover no-repeat;
 
   .grid {
     align-items: center;
-    background-color: var.$header_background_overlay;
+    background-color: var.$headerImageOverlay;
     min-height: 100svh;
   }
 
   .video {
-    background-color: var.$footer_background;
+    background-color: #000; // Original YouTube video background
     border-radius: 0.5rem;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; // 16:9 aspect ratio
     position: relative;
-    width: 100%;
 
     iframe {
       border-radius: 0.5rem;
-      box-shadow: var.$shadow;
+      box-shadow: var.$boxShadow;
       height: 100%;
       left: 0;
       position: absolute;
@@ -29,7 +28,7 @@
 }
 
 @mixin medium {
-  #hero {
+  header {
     .grid {
       min-height: 100vh;
     }

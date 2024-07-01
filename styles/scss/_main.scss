@@ -1,11 +1,55 @@
 @use "variables" as var;
 
 main {
-  section:nth-child(even) {
-    background-color: var.$background_alt
+  section:nth-child(odd) {
+    background-color: var.$backgroundAlt
+  }
+  
+  .cta {
+    text-align: center;
   }
 }
 
-@mixin medium {}
+section#about {
+  .image {
+    margin: 0 auto 1rem;
+    max-width: var.$aboutImageSize;
 
-@mixin large {}
+    .image__portrait {
+      background: var.$aboutImage center / cover no-repeat var.$borderColor;
+      border: 1px solid var.$borderColor;
+      border-radius: 50%;
+      padding-bottom: 100%;
+    }
+  }
+}
+
+section#map iframe {
+  display: block;
+  height: 18rem;
+  width: 100%;
+}
+
+@mixin medium {
+  section#about {
+    .grid__item:nth-child(1) {
+      grid-column: 1;
+    }
+
+    .grid__item:nth-child(2) {
+      grid-column: 2 / 4;
+    }
+  }
+}
+
+@mixin large {
+  section#about {
+    .grid__item:nth-child(1) {
+      grid-column: 2;
+    }
+
+    .grid__item:nth-child(2) {
+      grid-column: 3 / 5;
+    }
+  }
+}
