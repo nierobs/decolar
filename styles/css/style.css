@@ -194,10 +194,8 @@ footer ul {
 footer li {
   text-align: center;
 }
-footer li.header {
-  font: 500 1rem / 1.27202 "Archivo", sans-serif;
-  font-stretch: 108%;
-  letter-spacing: 0.0625rem;
+footer .h3 {
+  margin: 0;
 }
 footer a,
 footer a:any-link {

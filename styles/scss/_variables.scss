@@ -27,7 +27,7 @@ $buttonHoverBackground: lighten($buttonBackground, 12%);
 $buttonColor: #fff;
 $buttonHoverColor: $buttonColor;
 $buttonFont: 700 $small string.unquote("/") 1.27202 "Archivo", sans-serif; 
-$buttonIcon: $small;
+$buttonIconSize: $small;
 
 $headerImage: url("../../images/beach.webp");
 $headerImageOverlay: rgba(0, 0, 0, 0.84);
