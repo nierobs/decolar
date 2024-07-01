@@ -7,7 +7,7 @@ $background: #fff;
 $backgroundAlt: hsl(240, 16%, 92%);
 $borderColor: hsl(240, 16%, 88%);
 $borderRadius: 0.5rem;
-$boxShadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
+$boxShadow: 0.125rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.2);
 $color: hsl(240, 16%, 16%);
 $font: 400 1rem string.unquote("/") 1.618034 "Open Sans", sans-serif;
 $fontStretch: 108%;

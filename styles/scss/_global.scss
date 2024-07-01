@@ -64,7 +64,7 @@ h1,
   font: var.$h1Font;
   font-stretch: var.$fontStretch;
   letter-spacing: var.$letterSpacing;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h2,
@@ -72,7 +72,7 @@ h2,
   font: var.$h2Font;
   font-stretch: var.$fontStretch;
   letter-spacing: var.$letterSpacing;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h3,
@@ -80,11 +80,11 @@ h3,
   font: var.$h3Font;
   font-stretch: var.$fontStretch;
   letter-spacing: var.$letterSpacing;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 
   &:last-child {
     margin-bottom: 0;

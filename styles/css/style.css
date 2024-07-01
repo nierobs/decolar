@@ -59,7 +59,7 @@ h1,
   font: 700 2rem / 1.27202 "Archivo", sans-serif;
   font-stretch: 108%;
   letter-spacing: 0.0625rem;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h2,
@@ -67,7 +67,7 @@ h2,
   font: 700 1.414214rem / 1.27202 "Archivo", sans-serif;
   font-stretch: 108%;
   letter-spacing: 0.0625rem;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h3,
@@ -75,11 +75,11 @@ h3,
   font: 500 1rem / 1.618034 "Archivo", sans-serif;
   font-stretch: 108%;
   letter-spacing: 0.0625rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 p:last-child {
   margin-bottom: 0;
@@ -107,7 +107,7 @@ a.button:any-link {
   align-items: center;
   background: hsl(240, 16%, 16%);
   border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
   color: #fff;
   display: inline-flex;
   font: 700 0.707107rem / 1.27202 "Archivo", sans-serif;
@@ -147,7 +147,7 @@ header .video {
 }
 header .video iframe {
   border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
   height: 100%;
   left: 0;
   position: absolute;
@@ -227,26 +227,45 @@ footer #footnote .grid__item:nth-child(2) img {
   width: auto;
 }
 
-#testimonial .grid__item {
+#comments {
+  background: hsl(240, 16%, 96%);
+}
+#comments .comment {
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
-#testimonial .grid__item div {
-  flex: 25% 75%;
-}
-#testimonial .testimonial__image {
-  background: hsl(240, 16%, 16%);
+#comments img {
+  background: hsl(240, 16%, 88%);
   border: 1px solid hsl(240, 16%, 88%);
   border-radius: 50%;
   display: block;
   height: 5.656854rem;
   width: 5.656854rem;
 }
-#testimonial .testimonial__title {
-  font-weight: 700;
+#comments .comment__card {
+  background: #fff;
+  border: 1px solid hsl(240, 16%, 88%);
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.12);
+  padding: 1rem;
 }
-#testimonial .testimonial__content p {
-  margin: 0;
+#comments .comment__header {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#comments .comment__user {
+  align-items: center;
+  color: hsl(240, 16%, 52%);
+  display: inline-flex;
+  font-size: 0.707107rem;
+  font-weight: 400;
+  gap: 0.25rem;
+  margin-left: 0.25rem;
+}
+#comments .comment__user svg {
+  height: 0.707107rem;
+  width: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -282,6 +301,16 @@ footer #footnote .grid__item:nth-child(2) img {
   footer #footnote ul {
     align-items: center;
   }
+  #comments .grid__item {
+    gap: 1rem;
+  }
+  #comments .comment {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  #comments .comment:last-of-type {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (min-width: 1152px) {
   .grid {
@@ -305,17 +334,11 @@ footer #footnote .grid__item:nth-child(2) img {
   footer #info .grid__item:nth-child(3) {
     grid-column: 4;
   }
-  #testimonial .grid__item {
-    gap: 1rem;
-  }
-  #testimonial .grid__item:nth-child(2) {
+  #comments .comment:nth-child(odd) {
     grid-column: 2/4;
   }
-  #testimonial .grid__item:nth-child(3) {
+  #comments .comment:nth-child(even) {
     grid-column: 3/5;
-  }
-  #testimonial .grid__item:nth-child(4) {
-    grid-column: 2/4;
   }
 }
 

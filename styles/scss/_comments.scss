@@ -1,0 +1,77 @@
+@use "variables" as var;
+
+#comments {
+  background: hsl(240, 16%, 96%);
+  
+  .comment {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  img {
+    background: var.$borderColor;
+    border: 1px solid var.$borderColor;
+    border-radius: 50%;
+    display: block;
+    height: var.$commentImageSize;
+    width: var.$commentImageSize;
+  }
+
+  .comment__card {
+    background: #fff;
+    border: 1px solid var.$borderColor;
+    border-radius: var.$borderRadius;
+    box-shadow: var.$boxShadow;
+    padding: 1rem;
+  }
+
+  .comment__header {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .comment__user {
+    align-items: center;
+    color: hsl(240, 16%, 52%);
+    display: inline-flex;
+    font-size: var.$small;
+    font-weight: 400;
+    gap: 0.25rem;
+    margin-left: 0.25rem;
+
+    svg {
+      height: var.$small;
+      width: auto;
+    }
+  }
+}
+
+@mixin medium {
+  #comments {
+    .grid__item {
+      gap: 1rem;
+    }
+
+    .comment {
+      flex-direction: row;
+      margin-bottom: 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@mixin large {
+  #comments {
+    .comment:nth-child(odd) {
+      grid-column: 2 / 4;
+    }
+
+    .comment:nth-child(even) {
+      grid-column: 3 / 5;
+    }
+  }
+}
