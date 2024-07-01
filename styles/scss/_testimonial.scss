@@ -15,8 +15,8 @@
     border: 1px solid var.$borderColor;
     border-radius: 50%;
     display: block;
-    height: 5.039684rem;
-    width: 5.039684rem;
+    height: var.$commentImageSize;
+    width: var.$commentImageSize;
   }
 
   .testimonial__title {

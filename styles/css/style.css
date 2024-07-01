@@ -164,7 +164,7 @@ main .cta {
 
 section#about .image {
   margin: 0 auto 1rem;
-  max-width: 11.313708rem;
+  max-width: 9.1529820414rem;
 }
 section#about .image .image__portrait {
   background: url("../../images/flavio_da_costa_guimaraes.webp") center/cover no-repeat hsl(240, 16%, 88%);
@@ -239,8 +239,8 @@ footer #footnote .grid__item:nth-child(2) img {
   border: 1px solid hsl(240, 16%, 88%);
   border-radius: 50%;
   display: block;
-  height: 5.039684rem;
-  width: 5.039684rem;
+  height: 5.656854rem;
+  width: 5.656854rem;
 }
 #testimonial .testimonial__title {
   font-weight: 700;

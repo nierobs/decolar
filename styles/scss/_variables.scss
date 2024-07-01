@@ -1,4 +1,7 @@
+@use "sass:math";
 @use "sass:string";
+
+$goldenRatio: math.div(1 + math.sqrt(5), 2);
 
 $background: #fff;
 $backgroundAlt: hsl(240, 16%, 92%);
@@ -32,8 +35,10 @@ $buttonIconSize: $small;
 $headerImage: url("../../images/beach.webp");
 $headerImageOverlay: rgba(0, 0, 0, 0.84);
 
+$commentImageSize: 5.656854rem;
+
 $aboutImage: url("../../images/flavio_da_costa_guimaraes.webp");
-$aboutImageSize: 11.313708rem;
+$aboutImageSize: $commentImageSize * $goldenRatio;
 
 $footerBackground: hsl(240, 16%, 16%);
 $footerColor: #fff;
