@@ -24,7 +24,7 @@
     box-shadow: var.$boxShadow;
     border-radius: var.$borderRadius;
     flex: 1 1 auto;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .card__header {
@@ -58,6 +58,10 @@
       &:last-of-type {
         margin-bottom: 0;
       }
+    }
+
+    .card {
+      padding: 1rem;
     }
   }
 }

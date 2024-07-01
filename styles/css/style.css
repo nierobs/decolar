@@ -250,7 +250,7 @@ footer #footnote .grid__item:nth-child(2) img {
   box-shadow: 0.125rem 0.353553rem 0.5rem hsla(0, 0%, 0%, 0.08);
   border-radius: 0.5rem;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 #comments .card__header {
   font-weight: 700;
@@ -314,6 +314,9 @@ footer #footnote .grid__item:nth-child(2) img {
   }
   #comments .grid__item:last-of-type {
     margin-bottom: 0;
+  }
+  #comments .card {
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 1152px) {
