@@ -118,6 +118,7 @@ a.button:any-link {
   text-align: center;
   text-transform: uppercase;
   transition: all 250ms ease-out;
+  width: 100%;
 }
 a.button:hover,
 a.button:any-link:hover {
@@ -277,6 +278,10 @@ footer #footnote .grid__item:nth-child(2) img {
   }
   .grid .grid__item {
     grid-column: 1/4;
+  }
+  a.button,
+  a.button:any-link {
+    width: auto;
   }
   header .grid {
     min-height: 100vh;

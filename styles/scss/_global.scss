@@ -124,6 +124,7 @@ a.button:any-link {
   text-align: center;
   text-transform: uppercase;
   transition: var.$transition;
+  width: 100%;
 
   &:hover {
     background: var.$buttonHoverBackground;
@@ -146,6 +147,11 @@ a.button:any-link {
     .grid__item {
       grid-column: 1 / 4;
     }
+  }
+
+  a.button,
+  a.button:any-link {
+    width: auto;
   }
 }
 
