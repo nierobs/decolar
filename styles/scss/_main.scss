@@ -31,7 +31,7 @@ section#map iframe {
 }
 
 @mixin medium {
-  section#about {
+  section#team {
     .grid__item:nth-child(1) {
       grid-column: 1;
     }
@@ -43,7 +43,7 @@ section#map iframe {
 }
 
 @mixin large {
-  section#about {
+  section#team {
     .grid__item:nth-child(1) {
       grid-column: 2;
     }

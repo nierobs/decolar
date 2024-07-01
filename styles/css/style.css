@@ -164,7 +164,7 @@ main .cta {
 
 section#team .image {
   margin: 0 auto 1rem;
-  max-width: 9.1529820414rem;
+  max-width: 8rem;
 }
 section#team .image .image__portrait {
   background: url("../../images/flavio_da_costa_guimaraes.webp") center/cover no-repeat hsl(240, 16%, 88%);
@@ -240,9 +240,9 @@ footer #footnote .grid__item:nth-child(2) img {
   border: 1px solid hsl(240, 16%, 88%);
   border-radius: 50%;
   display: block;
-  height: 5.656854rem;
+  height: 6.289211rem;
   margin: 0 auto;
-  width: 5.656854rem;
+  width: 6.289211rem;
 }
 #comments .card {
   background: #fff;
@@ -281,10 +281,10 @@ footer #footnote .grid__item:nth-child(2) img {
   header .grid {
     min-height: 100vh;
   }
-  section#about .grid__item:nth-child(1) {
+  section#team .grid__item:nth-child(1) {
     grid-column: 1;
   }
-  section#about .grid__item:nth-child(2) {
+  section#team .grid__item:nth-child(2) {
     grid-column: 2/4;
   }
   footer {
@@ -318,10 +318,10 @@ footer #footnote .grid__item:nth-child(2) img {
   .grid .grid__item {
     grid-column: 2/5;
   }
-  section#about .grid__item:nth-child(1) {
+  section#team .grid__item:nth-child(1) {
     grid-column: 2;
   }
-  section#about .grid__item:nth-child(2) {
+  section#team .grid__item:nth-child(2) {
     grid-column: 3/5;
   }
   footer #info .grid__item:nth-child(1) {
