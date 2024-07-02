@@ -27,6 +27,12 @@
   src: local("Open Sans"), local("OpenSans"), url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
 }
 
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -137,6 +143,10 @@ a.button:any-link {
     margin-right: 0.5rem;
     width: auto;
   }
+}
+
+.fadein {
+  animation: fadein 1000ms ease-out forwards 250ms;
 }
 
 @mixin medium {
