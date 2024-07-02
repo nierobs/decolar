@@ -139,7 +139,7 @@ a.button:any-link svg {
 }
 
 .fadein {
-  animation: fadein 1000ms ease-out forwards 250ms;
+  animation: fadein 1000ms ease-out forwards 125ms;
 }
 
 header {
